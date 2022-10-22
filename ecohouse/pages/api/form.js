@@ -20,7 +20,6 @@ const TaskForm = () => (
             <option onclick={HandleClick} value="Boil Kettle">Boil Kettle</option>
             <option onclick={HandleClick} value="Shop Groc">Shop Groceries</option>
         </select>
-        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     </div>
     //     <TaskFormSpecific /> // 2. or create here with nothing on the option first then the subtasks will appear onclick option?
     // </> 
