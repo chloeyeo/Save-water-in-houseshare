@@ -1,6 +1,3 @@
-
-import react from 'React';
-
 const TaskForm = () => (
         <div class="max-w-2xl mx-auto">
             <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select an option</label>
