@@ -6,17 +6,6 @@ import Layout from '../components/root/Layout';
 import { useTask } from '../context/task-context';
 import { HomeIcon } from '@heroicons/react/24/solid'
 
-
-// TODOS
-
-// Fix date picker
-// Suggestions
-
-
-// Custom icons
-
-// Use timeline view 
-
 export default function Home() {
   const router = useRouter();
   const { toggleModal, tasks } = useTask()
@@ -35,9 +24,9 @@ export default function Home() {
         <h1 class="font-large text-blue-600 text-4xl font-bold">
           Welcome to Eco House.
         </h1>
-        <h2 class="font-regular text-4xl mt-0 mb-2 text-black-600">Simple schedules to optimise your energy</h2>
-
-        <p>Get started by adding your daily tasks and submit to receive timetable suggestions for your household.</p>
+        <h2 class="font-regular text-4xl mt-0 mb-2 text-black-600">Simple schedules to optimise your water consumption</h2>
+        <p>85% of people in the UK are unaware of the scale of their water usage.</p>
+        <p>Add your daily tasks and receive event suggestions for your household.</p>
         <div className='grid gap-4'>
           {tasks.map(({ taskName, Icon, attendees, recurrence, time }, i) => {
             return (
@@ -55,7 +44,7 @@ export default function Home() {
         <div class="flex">
           <button className="add-button mr-2" onClick={toggleModal}>Add Task</button>
           {tasks.length > 0 ? (
-            <button className='submit-button' onClick={NextPage}>Submit Daily Tasks</button>
+            <button className='submit-button' onClick={NextPage}>Submit Tasks</button>
           ) : null
           }
         </div>

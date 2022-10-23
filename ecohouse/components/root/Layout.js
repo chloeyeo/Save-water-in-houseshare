@@ -13,15 +13,6 @@ const Layout = ({ children }) => (
     <main className='max-w-2xl mx-auto p-4 space-y-4'>
       {children}
     </main>
-    {/* <footer className='max-w-2xl mx-auto p-4 space-y-4'>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by Powerpuff Girls
-      </a>
-    </footer> */}
   </div>
 )
 

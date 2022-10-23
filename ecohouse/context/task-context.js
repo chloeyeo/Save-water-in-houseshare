@@ -8,13 +8,12 @@ export const TaskProvider = ({ children, ...props }) => {
   const [modalOpen, setModalOpen] = useState(false)
 
   const addTask = (taskName, Icon, attendees, recurrence, time) => {
-    setTasks((current) => [...current, {taskName, Icon, attendees, recurrence, time}])
+    setTasks((current) => [...current, { taskName, Icon, attendees, recurrence, time }])
   }
 
   const toggleModal = () => {
     setModalOpen(!modalOpen)
   }
-
 
   return (
     <TaskContext.Provider
@@ -25,12 +24,12 @@ export const TaskProvider = ({ children, ...props }) => {
       }}
       {...props}
     >
-        <div className="relative">
-           {modalOpen &&  <Modal /> }
-           {modalOpen &&  <div  className="w-full h-screen bg-black opacity-50 absolute top-0 right-0 z-10"/> }
+      <div className="relative">
+        {modalOpen && <Modal />}
+        {modalOpen && <div className="w-full h-screen bg-black opacity-50 absolute top-0 right-0 z-10" />}
         {children}
-        </div>
-        </TaskContext.Provider>
+      </div>
+    </TaskContext.Provider>
   );
 };
 
